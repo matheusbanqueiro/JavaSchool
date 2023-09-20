@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cadastrar Aluno | JavaSchool</title>
+	<link rel="icon" type="image/svg+xml" href="../imgs/iconfundobranco.svg">
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css" />
+	<style>
+		.logo:hover {
+			transform: scale(1.5);
+			transition: transform 0.3s ease-in-out;
+		}
+	</style>
+</head>
+
+<body style="background-color: var(--primary-color)" class="min-h-screen flex items-center justify-center">
+	<div class="w-auto max-w-2xl p-8 rounded-lg">
+		<div class="flex items-center justify-center">
+			<img class="logo h-auto w-60 transition-transform transform hover:scale-110" src="../imgs/logofundoroxo.png"
+				alt="Logo">
+		</div>
+
+		<h1 class="text-2xl font-semibold mb-8 mx-auto text-center text-white">Cadastrar Aluno</h1>
+		<form action="../ServletAluno?cmd=incluir" method="post" class="mb-2">
+			<input type="hidden" name="cmd" value="incluir" />
+			<div class="mb-4 flex">
+				<div class="w-1/2 pr-2">
+					<label for="txtRa" class="block font-semibold mb-2 text-white">RA do Aluno</label>
+					<input type="text" id="txtRa" name="txtRa" class="w-full px-4 py-2 border rounded-lg bg-gray-200"
+						placeholder="RA do aluno" required>
+				</div>
+				<div class="w-1/2 pl-2">
+					<label for="txtNome" class="block font-semibold mb-2 text-white">Nome do Aluno</label>
+					<input type="text" id="txtNome" name="txtNome"
+						class="w-full px-4 py-2 border rounded-lg bg-gray-200" placeholder="Nome do aluno" required>
+				</div>
+			</div>
+			<div class="mb-4">
+				<label for="txtEmail" class="block font-semibold mb-2 text-white">Email</label>
+				<input type="email" id="txtEmail" name="txtEmail" class="w-full px-4 py-2 border rounded-lg bg-gray-200"
+					placeholder="Email do aluno" required>
+			</div>
+			<div class="mb-4">
+				<label for="txtEndereco" class="block font-semibold mb-2 text-white">Endereço</label>
+				<input type="text" id="txtEndereco" name="txtEndereco"
+					class="w-full px-4 py-2 border rounded-lg bg-gray-200" placeholder="Endereço do aluno" required>
+			</div>
+			<div class="mb-4 flex">
+				<div class="w-1/2 pr-2">
+					<label for="txtData" class="block font-semibold mb-2 text-white">Data de Nascimento</label>
+					<input type="date" id="txtData" name="txtData"
+						class="w-full px-4 py-2 border rounded-lg bg-gray-200" required>
+				</div>
+				<div class="w-1/2 pl-2">
+					<label for="cmbPeriodo" class="block font-semibold mb-2 text-white">Período</label>
+					<select id="cmbPeriodo" name="cmbPeriodo"
+						class="w-full px-4 py-3 border rounded-lg bg-gray-200 pr-8" required>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</div>
+			</div>
+			<div class="flex items-center justify-center mt-8 flex-col gap-y-4">
+				<button type="submit" value="Enviar"
+					class="border border-green-600 hover:bg-green-600 text-white hover:text-white font-bold py-3 px-6 rounded-lg mr-2 w-1/2 w-full">
+					Cadastrar
+				</button>
+				<button
+					class=" hover:bg-red-500 text-white hover:gray-900 font-bold py-3 px-6 rounded-lg flex items-center transition-transform transform hover:translate-y-1"
+					onclick="window.location.href = 'admin.html';">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="w-5 h-5 mr-2">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+					</svg>
+					Voltar
+				</button>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;}
+</style>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-178.6653" y1="-516.9622" x2="1164.4043" y2="1611.2874">
+		<stop  offset="0" style="stop-color:#0E01A7"/>
+		<stop  offset="0.1323" style="stop-color:#1809AD"/>
+		<stop  offset="0.3599" style="stop-color:#3420BE"/>
+		<stop  offset="0.6553" style="stop-color:#6144DA"/>
+		<stop  offset="1" style="stop-color:#9E76FF"/>
+	</linearGradient>
+	<path class="st0" d="M772.42,783.89H27.58c-6.33,0-11.47-5.13-11.47-11.47V27.58c0-6.33,5.13-11.47,11.47-11.47h744.85
+		c6.33,0,11.47,5.13,11.47,11.47v744.85C783.89,778.76,778.76,783.89,772.42,783.89z"/>
+	<g>
+		<g>
+			<path class="st1" d="M423.79,475.83h-134.7L161.92,337.38l127.17-138.45h134.7l-127.8,138.45L423.79,475.83z"/>
+		</g>
+		<g>
+			<path class="st1" d="M394.57,330.26h134.7l127.17,138.45L529.27,607.16h-134.7l127.8-138.45L394.57,330.26z"/>
+		</g>
+		<g>
+			<g>
+				<path class="st2" d="M423.79,475.83h-134.7L161.92,337.38l127.17-138.45h134.7l-127.8,138.45L423.79,475.83z"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<path class="st2" d="M395.82,328.23h134.7l127.17,138.45L530.52,605.13h-134.7l127.8-138.45L395.82,328.23z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

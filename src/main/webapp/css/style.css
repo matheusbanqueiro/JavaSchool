@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #4902de;
+    --secondary-color: #eaeaea;
+    --third-color:#ff9100;
+    --complement-color: #3800b1;
+}
+.hover-effect:hover {
+    color: var(--third-color); 
+    transition: color 0.3s; 
+}
+
+
+
+
+
+

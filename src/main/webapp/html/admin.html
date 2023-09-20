@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Administração | JavaSchool</title>
+	<link rel="icon" type="image/svg+xml" href="../imgs/iconfundobranco.svg">
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css" />
+
+	<style>
+		.svg-rotate {
+			animation: rotate 0.3s ease-in-out;
+		}
+
+		.svg-rotate:hover {
+			animation: rotate 0.3s ease-in-out;
+		}
+
+		@keyframes rotate {
+			0% {
+				transform: rotate(0);
+			}
+
+			100% {
+				transform: rotate(45deg);
+			}
+		}
+
+		.logo:hover {
+			transform: scale(1.1);
+			transition: transform 0.3s ease-in-out;
+		}
+	</style>
+</head>
+
+<body style="background-color: var(--primary-color)"
+	class="text-white min-h-screen flex flex-col items-center justify-center space-y-8">
+	
+	<img class="w-80 " src="../imgs/logofundoroxo.png" alt="foto faculdade">
+
+
+	<h1 class="text-4xl font-bold mt-4">Bem-vindo(a)</h1>
+
+	<div class="flex space-x-4 mt-8">
+		<button
+			class="border border-blue-500  text-white hover:bg-blue-500 font-bold py-4 px-8 rounded-lg flex items-center transition-transform transform hover:translate-y-1"
+			onclick="window.location.href = 'incluir.html';">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+				stroke="currentColor" class="w-6 h-6 mr-2 svg-rotate">
+				<path stroke-linecap="round" stroke-linejoin="round"
+					d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+			</svg>
+			Cadastrar Alunos
+		</button>
+
+		<button
+			class="border border-pink-600 text-white hover:bg-pink-600 hover:text-white font-bold py-4 px-8 rounded-lg flex items-center transition-transform transform hover:translate-y-1"
+			onclick="window.location.href = '../ServletAluno?cmd=listar';">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+				stroke="currentColor" class="w-6 h-6 mr-2 svg-rotate">
+				<path stroke-linecap="round" stroke-linejoin="round"
+					d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+			</svg>
+			Listagem Alunos
+		</button>
+
+	</div>
+	<button
+		class="hover:bg-red-500 text-white font-bold py-4 px-8 rounded-lg flex items-center transition-transform transform hover:translate-y-1 mt-8"
+		onclick="window.location.href = '../index.html';">
+		<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+			class="w-5 h-5 mr-2">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+		</svg>
+		Sair
+	</button>
+</body>
+
+</html>
