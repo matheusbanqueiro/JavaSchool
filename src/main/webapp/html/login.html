@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../css/style.css" />
 </head>
 
+
 <body style="background-color: var(--primary-color)" class="sans relative flex justify-center items-center h-screen">
       
 	<div class="relative rounded-lg max-w-md w-full p-8">
@@ -70,6 +71,7 @@
 			</div>
 		</form>
 	</div>
+
 	<script>
         const passwordField = document.getElementById("password");
         const togglePasswordButton = document.getElementById("togglePassword");
@@ -95,6 +97,17 @@
                 `;
             }
         });
+        function validarFormulario() {
+            const loginField = document.getElementsByName("login")[0];
+            const senhaField = document.getElementsByName("senha")[0];
+
+            if (loginField.value.trim() === "" || senhaField.value.trim() === "") {
+                alert("Por favor, preencha todos os campos.");
+                return false; // Impede o envio do formulário
+            }
+
+            return true; // Permite o envio do formulário
+        }
     </script>
 </body>
 
