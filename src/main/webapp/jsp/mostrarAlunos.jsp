@@ -17,6 +17,10 @@
 	href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
 	rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
 </head>
 
 <body style="background-color: var(--secondary-color)" class="sans">
@@ -62,7 +66,11 @@
             </svg>
 			</button>
 		</div>
-		<div class="flex items-center justify-center w-full">
+		
+	</div>
+
+
+<div class="flex flex-col items-center justify-center w-full">
 			<div style="background-color: var(--primary-color)"
 				class="rounded-lg p-4 shadow-md flex items-center text-white">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -71,16 +79,15 @@
                 <path stroke-linecap="round" stroke-linejoin="round"
 						d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
             </svg>
+            <div class="text-right">
+				<p class="text-lg font-bold">Cadastrados</p>
 				<span id="contadorAlunos" class="text-lg font-semibold">10</span>
 			</div>
 		</div>
-	</div>
-
-
-
+		
 	<div class="container mx-auto mt-8 p-8">
 		<div class="bg-dark shadow-lg rounded-lg overflow-x-auto">
-			<table class="min-w-full divide-y divide-gray-500 text-gray-300">
+			<table  id="tabelaAlunos" class="min-w-full divide-y divide-gray-500 text-gray-300">
 				<thead style="background-color: var(--primary-color)"
 					class="bg-gray-700">
 					<tr>
@@ -210,7 +217,22 @@
 
 		// Chame a função inicialmente para definir o contador com base nos dados iniciais
 		atualizarContadorAlunos();
-	</script>
+	
+$(document).ready(function() {
+  $('#tabelaAlunos').DataTable({
+    "paging": false, // Ativar a paginação
+    "lengthChange": false, // Permitir ao usuário escolher o número de registros por página
+    "searching": false, // Ativar a pesquisa
+    "ordering": true, // Ativar a classificação das colunas
+    "info": false, // Mostrar informações sobre a paginação
+    "autoWidth": false, // Desativar o ajuste automático da largura das colunas
+    "language": {
+      "url": "//cdn.datatables.net/plug-ins/1.11.5/i18n/Portuguese-Brasil.json" // Tradução para o português do Brasil
+    }
+  });
+});
+</script>
+	
 </body>
 
 </html>
