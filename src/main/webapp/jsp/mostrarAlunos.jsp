@@ -21,22 +21,31 @@
 
 <body style="background-color: var(--secondary-color)" class="sans">
 	<div style="background-color: var(--primary-color)"
-		class="bg-dark p-6 text-center">
-		<div class="flex items-center justify-center">
-			<button
-				class="text-blue-500 border border-blue-500 hover:bg-blue-600 hover:text-white hover:gray-900 font-bold py-3 px-6 rounded-lg flex items-center transition-transform transform hover:translate-y-1"
-				onclick="window.location.href = 'html/admin.html';">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none"
-					viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-					class="w-5 h-5 mr-2">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-						d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg>
-				
-			</button>
-		</div>
-		<h1 class="text-4xl text-white font-semibold">Lista de Alunos</h1>
+		class="bg-dark p-6  text-center">
+		<div class="flex flex-col items-center justify-center">
+			<a
+          href="html/admin.html"
+          class="mb-8 text-white text-xl font-semibold underline-none transform scale-100 hover:scale-105 transition-transform"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 inline-block mr-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
+            />
+          </svg>
+          Voltar
+        </a>
 		
+		<h1 class="mt-8 text-4xl text-white font-semibold">Lista de Alunos</h1>
+		</div>
 	</div>
 	<div class="py-4 flex flex-col items-center justify-center">
 		<div class="relative mb-4">
@@ -127,7 +136,7 @@
             </svg>
 
 								</a> <a href="ServletAluno?cmd=atu&txtRa=<%=a.getRa()%>"
-									class="hover:text-white hover:gray-900 font-bold py-2 px-4 rounded-lg flex items-center transition-transform transform hover:translate-y-1">
+									class="hover:gray-900 font-bold py-2 px-4 rounded-lg flex items-center transition-transform transform hover:translate-y-1">
 									<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
   <path

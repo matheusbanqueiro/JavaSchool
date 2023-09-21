@@ -41,7 +41,7 @@
 				<label for="txtRa" class="block font-semibold text-white">RA</label>
 				<input type="text" id="txtRa" name="txtRa"
 					value="<%=aluno.getRa()%>" readonly="readonly"
-					class="w-full px-4 py-2 border rounded-lg bg-gray-100" />
+					class="w-full px-4 py-2 border rounded-lg bg-gray-200" />
 			</div>
 			<div>
 				<label for="txtNome" class="block font-semibold text-white">Nome</label>
@@ -72,7 +72,7 @@
 			</div>
 			<div>
 				<label for="txtIdade" class="block font-semibold text-white">Período</label>
-				<input type="text" id="txtIdade" name="txtIdade"
+				<input type="text" id="cmbPeriodo" name="cmbPeriodo"
 					value="<%=aluno.getPeriodo()%>" readonly="readonly"
 					class="w-full px-4 py-2 border rounded-lg bg-gray-200" />
 			</div>
@@ -91,7 +91,26 @@
 			</button>
 		</div>
 		<div class="flex justify-center mt-8">
-		<a href="html/admin.html" class="text-white hover:underline">Voltar</a>
+		<a
+          href="html/admin.html"
+          class="mb-8 text-white text-xl font-semibold underline-none transform scale-100 hover:scale-105 transition-transform"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 inline-block mr-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
+            />
+          </svg>
+          Voltar
+        </a>
 		</div>
 	</form>
 
